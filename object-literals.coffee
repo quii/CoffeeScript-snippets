@@ -10,8 +10,8 @@ console.log name
 console.log company
 
 #This could be used to convert json from an ajax request into something more useful
-chrisUser = name:'Chris', company:'Springer'
-toddUser = name:'Todd', company:'Springer Healthcare'
+chrisJson = "name":'Chris', "company":'Springer'
+toddJson = "name":'Todd', "company":'Springer Healthcare'
 
 class Dude
 	constructor:(userJson) ->
@@ -19,8 +19,8 @@ class Dude
 
 	sayHello: -> console.log("I am known as #{@alias} and I work for #{@business}")
 
-chris = new Dude(chrisUser)
-todd = new Dude(toddUser)
+chris = new Dude(chrisJson)
+todd = new Dude(toddJson)
 
 dude.sayHello() for dude in [chris, todd]
 

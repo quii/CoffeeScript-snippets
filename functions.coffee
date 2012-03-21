@@ -5,9 +5,10 @@ veryComplexFunction = ->
 
 functionWithArg = (arg) -> "hello #{arg}"
 
-functionWithVarArgs = (varargs...) -> 
+functionWithVarArgs = (varargs...) -> console.log(x) for x in varargs
 
 functionWithDefaults = (arg = "Melissa") -> console.log("Hi #{arg} xx")
 
+functionWithVarArgs("foo", "bar", "car")
 functionWithDefaults()
 functionWithDefaults("Tay")
