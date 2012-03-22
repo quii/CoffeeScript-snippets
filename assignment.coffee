@@ -1,19 +1,19 @@
 #Chaining assignments
-scala = ruby = false
+cool = true
+scala = ruby = !cool
 console.log scala, ruby
 
-cool = true
-
-itsFriday = false
 
 #Conditions
-chris = "happy" if itsFriday
-
 unless scala is cool
 	console.log("Oh noes, if scala isn't cool, does that mean we're not cool?")
 
 if scala is cool
 	console.log("Phew, all is right with the world")
+
+itsFriday = true
+chris = "happy" if itsFriday
+console.log("chris is #{chris}")
 
 #Chaining comparisons
 cholesterol = 127
