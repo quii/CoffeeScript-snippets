@@ -5,7 +5,7 @@ bettyUser =
 console.log bettyUser
 
 #You can desconstruct objects with pattern matching too
-{name: name, company: company} = bettyUser 
+{name, company} = bettyUser 
 console.log name
 console.log company
 
