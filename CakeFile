@@ -1,0 +1,9 @@
+{exec} = require 'child_process'
+
+task 'say:hello', 'Description of task', ->
+  console.log 'Hello World!'
+
+task 'build', 'Build project from coffeescript/*.coffee to javascript/*.js', ->
+  exec 'coffee --compile --output coffeescript/ javascript/', (err, stdout, stderr) ->
+    throw err if err
+    console.log stdout + stderr
